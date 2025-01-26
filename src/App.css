@@ -1,0 +1,176 @@
+body {
+  background-image: url('/BC.jpg');
+  background-size: cover; /* Ensures the background image covers the entire page */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-attachment: fixed; /* Keeps the background image fixed in place */
+  background-position: center;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Enhanced table design */
+table {
+  width: 100%;
+  opacity: 85%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center; /* Center align text in table cells */
+}
+
+tbody tr {
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.divss {
+  margin: 0px 300px;
+  border-radius: 20px;
+  opacity: 85%;
+  color: #009879;
+  background-color: #f1f1f1;
+}
+
+h1 {
+  font-weight: bold;
+  color: #009879;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  font-weight: bold;
+  color: #009879;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 20px;
+  font-size: large;
+  border-radius: 40px;
+}
+
+button:hover {
+  background-color: #009879;
+  color: #f1f1f1;
+}
+
+tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+/* Additional styling for better appearance */
+table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  border-radius: 10px 10px 0 0;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+th, td {
+  border-right: 1px solid #dddddd;
+}
+
+th:last-child, td:last-child {
+  border-right: none;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  table {
+    font-size: 0.8em;
+  }
+
+  th, td {
+    padding: 8px 10px;
+  }
+
+  button {
+    padding: 15px 15px;
+    font-size: medium;
+  }
+
+  .divss {
+    margin: 0px 50px;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  table {
+    font-size: 0.7em;
+  }
+
+  th, td {
+    padding: 6px 8px;
+  }
+
+  button {
+    padding: 10px 10px;
+    font-size: small;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .divss {
+    margin: 0px 20px;
+    padding: 0.5rem;
+  }
+}
